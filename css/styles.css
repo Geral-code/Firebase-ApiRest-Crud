@@ -29,3 +29,7 @@ nav a:hover {
 .error {
   color: red;
 }
+
+a {
+  text-decoration: none;
+}

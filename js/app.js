@@ -43,8 +43,8 @@ import { obtenerClientes, eliminarCliente } from './api.js';
           <p>${empresa}</p>
         </td>
         <td>
-          <a href="editar-cliente.html?id=${id}">Editar</a>
-          <a href="#" data-cliente="${id}" class="eliminar">Eliminar</a>
+          <a class= "btn btn-warning btn-sm fas fa-pencil-alt" href="editar-cliente.html?id=${id}"></a>
+          <a class= "btn btn-danger btn-sm fas fa-trash eliminar" href="#" data-cliente="${id}"></a>
         </td>
       `;
       
@@ -54,6 +54,10 @@ import { obtenerClientes, eliminarCliente } from './api.js';
   };
 
   function confirmarEliminar(event) {
+    //const miarray = event.target.classList;  =una de las formas para 
+    //console.log(typeof(miarray));
+    
+
      
     if(event.target.classList.contains('eliminar')) {
       //Capturamos el id del cliente
